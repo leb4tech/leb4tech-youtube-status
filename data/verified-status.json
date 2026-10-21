@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "checked_at_utc": "2026-10-21T22:05:17.746666+00:00",
+  "scope": "Reviewed recent forum posts, not a complete live outage inventory",
+  "official_post_dates_available": false,
+  "active_status_enabled": false,
+  "items": [
+    {
+      "id": "473433364",
+      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
+      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
+      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "468791912",
+      "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
+      "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
+      "url": "https://support.google.com/youtube/thread/468791912?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "470158580",
+      "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
+      "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
+      "url": "https://support.google.com/youtube/thread/470158580?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "468026869",
+      "title_ar": "أخطاء تحميل التحليلات في YouTube Studio",
+      "title_en": "🚨 [FIXED] Analytics loading errors in YouTube Studio",
+      "url": "https://support.google.com/youtube/thread/468026869?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "463279672",
+      "title_ar": "مشكلات تتعلق بالتسميات التوضيحية للبث المباشر على YouTube",
+      "title_en": "🚨[Fixed] Issues with YouTube Livestream Captions",
+      "url": "https://support.google.com/youtube/thread/463279672?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "465311618",
+      "title_ar": "غير قادر على تعديل البث المباشر عبر الهاتف المحمول على تطبيق Android الرئيسي - Creators",
+      "title_en": "🚨 [FIXED] Unable to edit mobile live streams on Android Main App - Creators",
+      "url": "https://support.google.com/youtube/thread/465311618?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "458858307",
+      "title_ar": "تأخير الإيرادات في \"استوديو YouTube\" (ابتداءً من 8 أغسطس)",
+      "title_en": "🚨 [FIXED] Revenue delay in YouTube Studio (Starting Aug 8)",
+      "url": "https://support.google.com/youtube/thread/458858307?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "420372066",
+      "title_ar": "🚨 رسالة منبثقة تم إرسالها بالخطأ",
+      "title_en": "🚨 Pop up Message Sent out in Error",
+      "url": "https://support.google.com/youtube/thread/420372066?hl=en",
+      "status": "unverified",
+      "status_reason": "known_issue_without_current_ongoing_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "451946491",
+      "title_ar": "وضع الصورة داخل الصورة لا يعمل (خاص بنظام iOS)",
+      "title_en": "🚨 [Fixed] Picture-in-Picture Mode not working (Mainly iOS)",
+      "url": "https://support.google.com/youtube/thread/451946491?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "467480477",
+      "title_ar": "مشكلات في تسجيل الدخول إلى YouTube على أجهزة التلفزيون ووحدات تحكم الألعاب",
+      "title_en": "🚨 [Fixed] Issues logging into YouTube on TVs and gaming consoles",
+      "url": "https://support.google.com/youtube/thread/467480477?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "451265696",
+      "title_ar": "مشكلات استخدام تطبيق YouTube للجوال",
+      "title_en": "🚨 [FIXED] Issues using YouTube Mobile App",
+      "url": "https://support.google.com/youtube/thread/451265696?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "451076558",
+      "title_ar": "يواجه منشئو المحتوى مشاكل في نقل قناتهم على YouTube إلى حساب علامة تجارية",
+      "title_en": "🚨[Fixed] Creators having issues moving their YouTube channel to a Brand Account",
+      "url": "https://support.google.com/youtube/thread/451076558?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "471253790",
+      "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
+      "title_en": "🚨 [Fixed] Playback buffering issues in North America",
+      "url": "https://support.google.com/youtube/thread/471253790?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "465617845",
+      "title_ar": "مشكلات تحميل تطبيق YouTube TV وYouTube (تقارير في المقام الأول من تكساس، الولايات المتحدة)",
+      "title_en": "🚨 [FIXED] YouTube TV & YouTube App Loading Issues (Reports primarily from Texas, US)",
+      "url": "https://support.google.com/youtube/thread/465617845?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "468016641",
+      "title_ar": "مشكلات الاشتراك وإدارة الاشتراكات في YouTube وYouTube TV",
+      "title_en": "🚨 [FIXED] YouTube & YouTube TV signup and subscription management issues",
+      "url": "https://support.google.com/youtube/thread/468016641?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "462538290",
+      "title_ar": "قوائم التشغيل مثل \"المشاهدة لاحقًا\" تعرض مقاطع الفيديو جزئيًا",
+      "title_en": "🚨 [Fixed] Playlists such as Watch Later partially displaying videos",
+      "url": "https://support.google.com/youtube/thread/462538290?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "459660973",
+      "title_ar": "اختفاء تفاصيل الفيديو والتعليقات بعد الخروج من وضع ملء الشاشة",
+      "title_en": "🚨 [FIXED] Video Details and Comments Disappearing After Exiting Full Screen",
+      "url": "https://support.google.com/youtube/thread/459660973?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "464770775",
+      "title_ar": "1 من 10 تصنيف مفقود في تطبيق Studio للجوال",
+      "title_en": "🚨 [FIXED] 1 of 10 ranking missing on the Studio mobile app",
+      "url": "https://support.google.com/youtube/thread/464770775?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "462933624",
+      "title_ar": "أخطاء البحث الصوتي عبر أجهزة متعددة",
+      "title_en": "🚨 [FIXED] Voice search errors across multiple devices",
+      "url": "https://support.google.com/youtube/thread/462933624?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "441226786",
+      "title_ar": "رسالة خطأ عند البحث عن \"كريستيانو رونالدو\" على اليوتيوب",
+      "title_en": "🚨[FIXED] Error message when searching ‘Cristiano Ronaldo’ on YouTube",
+      "url": "https://support.google.com/youtube/thread/441226786?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    }
+  ]
+}
