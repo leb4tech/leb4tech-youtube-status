@@ -6,11 +6,26 @@ import json
 import re
 import urllib.request
 from pathlib import Path
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import urljoin, urlsplit, urlencode
+import time
 from bs4 import BeautifulSoup
 
 SOURCE = "https://support.google.com/youtube/threads?thread_filter=%28purpose%3Aknown_issue%29&hl=en"
 OUTPUT = Path("data/youtube-status.json")
+
+def translate_ar(text):
+    """Best-effort unofficial public translation endpoint; may be rate-limited."""
+    params = urlencode({"client":"gtx", "sl":"en", "tl":"ar", "dt":"t", "q":text})
+    req = urllib.request.Request("https://translate.googleapis.com/translate_a/single?" + params, headers={"User-Agent":"Mozilla/5.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=12) as res:
+            result = json.load(res)
+        translated = "".join(part[0] for part in result[0] if part and part[0])
+        if re.search("[\u0600-\u06ff]", translated):
+            return translated.strip()
+    except Exception as exc:
+        print("Translation service unavailable:", type(exc).__name__)
+    return None
 
 def main():
     request = urllib.request.Request(SOURCE, headers={
@@ -51,9 +66,28 @@ def main():
         seen.add(post_id)
     if len(items) < 5:
         raise RuntimeError(f"Too few extracted threads ({len(items)}); preserving previous feed")
+    previous_items = {}
+    if OUTPUT.exists():
+        try:
+            previous_items = {x["id"]:x for x in json.loads(OUTPUT.read_text(encoding="utf-8")).get("items", [])}
+        except (OSError, ValueError, KeyError):
+            pass
+    translated_count = 0
+    for item in items:
+        clean = re.sub(r"^\s*🚨?\s*\[\s*fixed\s*\]\s*", "", item["title_en"], flags=re.I).strip()
+        previous = previous_items.get(item["id"], {})
+        if previous.get("title_en") == item["title_en"] and previous.get("title_ar"):
+            item["title_ar"] = previous["title_ar"]
+        else:
+            item["title_ar"] = translate_ar(clean)
+            if item["title_ar"]:
+                translated_count += 1
+                time.sleep(0.4)
+        item["summary_ar"] = ("أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي." if item["status"] == "fixed" else None)
+    print("New Arabic translations:", translated_count)
     generated = dt.datetime.now(dt.timezone.utc).isoformat()
     payload = {
-        "version": 1,
+        "version": 2,
         "source": SOURCE,
         "checked_at_utc": generated,
         "scope": "Recent visible known-issue forum threads, not all YouTube incidents",
