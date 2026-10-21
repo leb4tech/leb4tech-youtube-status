@@ -1,0 +1,46 @@
+name: Compare official thread structures
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Install browser
+        run: |
+          python3 -m pip install --quiet playwright
+          python3 -m playwright install --with-deps chromium
+      - name: Compare post boundaries and authorship
+        run: |
+          python3 - <<'PY'
+          import re
+          from playwright.sync_api import sync_playwright
+          ids=['473433364','468791912','420372066']
+          with sync_playwright() as p:
+              browser=p.chromium.launch(headless=True)
+              for thread_id in ids:
+                  page=browser.new_page(locale='en-US')
+                  try:
+                      url=f'https://support.google.com/youtube/thread/{thread_id}?hl=en'
+                      response=page.goto(url,wait_until='domcontentloaded',timeout=40000)
+                      page.wait_for_timeout(3500)
+                      body=page.locator('body').inner_text(timeout=10000)
+                      before=re.split(r'All Replies\s*\(\d+\)',body,maxsplit=1)[0]
+                      title=page.title()
+                      print('THREAD',thread_id,'HTTP',response.status if response else 'unknown')
+                      print('TITLE',repr(title[:160]))
+                      print('REPLY_BOUNDARY',bool(re.search(r'All Replies\s*\(\d+\)',body)))
+                      print('PRE_REPLY_LENGTH',len(before))
+                      print('ORIGINAL_POSTER_BEFORE_REPLIES','Original Poster' in before)
+                      print('GOOGLE_EMPLOYEE_BEFORE_REPLIES','Google Employee' in before)
+                      print('FIRST_450_CHARS',repr(before[:450]))
+                      print('---')
+                  except Exception as exc:
+                      print('THREAD_ERROR',thread_id,type(exc).__name__,str(exc)[:250])
+                  finally:
+                      page.close()
+              browser.close()
+          print('DIAGNOSTIC ONLY. Results are not authoritative authorship verification.')
+          PY
