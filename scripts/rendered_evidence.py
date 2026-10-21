@@ -24,8 +24,10 @@ def extract_visible_evidence(body, expected_title):
     if i < 3 or lines[i-2] != "Google Employee" or lines[i-1] != "•":
         return {"verified": False, "reason": "staff_badge_not_adjacent"}
     author = lines[i-3]
-    if not TEAM.search(author):
-        return {"verified": False, "reason": "not_identified_teamyoutube_author"}
+    if not author or len(author) > 100:
+        return {"verified": False, "reason": "invalid_staff_author"}
+    # The adjacent Google Employee badge and Original Poster marker provide
+    # staff-post evidence even when the display name omits TeamYouTube.
     label = lines[p+1] if p+1<len(lines) else ""
     if label not in ("Fixed","Known Issue"):
         return {"verified":False,"reason":"unrecognized_status_label"}
@@ -37,5 +39,7 @@ def extract_visible_evidence(body, expected_title):
     fixed_confirmed = bool(FIXED.search(expected_title) and (label=="Fixed" or FIXED_TEXT.search(message)))
     return {"verified":True,"author":author,"status_label":label,
             "fixed_confirmed":fixed_confirmed,
+            "staff_badge_verified":True,
+            "team_brand_in_name":bool(TEAM.search(author)),
             "message_preview":message[:550],"reply_boundary":bool(boundary),
             "locked_thread":bool(locked and not boundary)}
