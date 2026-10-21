@@ -1,0 +1,37 @@
+name: Inspect official YouTube thread details
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Inspect official thread markup without publishing
+        run: |
+          python3 -m pip install --quiet beautifulsoup4
+          python3 - <<'PY'
+          import json, urllib.request, re
+          from bs4 import BeautifulSoup
+          sample = 'https://support.google.com/youtube/thread/473433364?hl=en'
+          request = urllib.request.Request(sample, headers={'User-Agent': 'Mozilla/5.0'})
+          with urllib.request.urlopen(request, timeout=25) as resp:
+              page = resp.read(2000000).decode('utf-8','replace')
+              print('HTTP:', resp.status, 'HTML chars:',len(page))
+          soup = BeautifulSoup(page,'html.parser')
+          print('Title:',soup.title.get_text(' ',strip=True)[:200] if soup.title else 'MISSING')
+          metas = {}
+          for m in soup.select('meta[property],meta[name]'):
+              key=m.get('property') or m.get('name')
+              if key in ('og:title','description','datePublished','article:published_time','article:modified_time'):
+                  metas[key]=m.get('content','')[:240]
+          print('Metadata:',json.dumps(metas,ensure_ascii=False))
+          print('JSON-LD blocks:',len(soup.select('script[type="application/ld+json"]')))
+          print('Article elements:',len(soup.select('article')))
+          print('Comments/answer structures present:',bool(soup.select('[data-answer-id], [data-comment-id]')))
+          text=soup.get_text(' ',strip=True)
+          for phrase in ('This issue has been resolved','we are investigating','we’re investigating'):
+              print('Page includes',repr(phrase),':',phrase.lower() in text.lower())
+          print('IMPORTANT: This is a structural diagnostic, not verification of official staff authorship.')
+          PY
