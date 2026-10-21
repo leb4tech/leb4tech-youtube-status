@@ -1,0 +1,39 @@
+name: Verify official issue post extraction
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Install browser
+        run: |
+          python3 -m pip install --quiet playwright
+          python3 -m playwright install --with-deps chromium
+      - name: Inspect first post and replies boundary
+        run: |
+          python3 - <<'PY'
+          import re
+          from playwright.sync_api import sync_playwright
+          url="https://support.google.com/youtube/thread/473433364?hl=en"
+          with sync_playwright() as p:
+              browser=p.chromium.launch(headless=True)
+              page=browser.new_page(locale="en-US")
+              try:
+                  page.goto(url,wait_until="domcontentloaded",timeout=45000)
+                  page.wait_for_timeout(4500)
+                  text=page.locator("body").inner_text()
+                  print("Body chars:",len(text))
+                  print("Contains verified badge:", "Google Employee" in text)
+                  print("Contains OP label:", "Original Poster" in text)
+                  print("Contains Fixed label:", bool(re.search(r"(?m)^Fixed$",text)))
+                  print("Reply boundary:",bool(re.search(r"All Replies \(\d+\)",text)))
+                  head=re.split(r"All Replies \(\d+\)",text,maxsplit=1)[0]
+                  print("PRE-REPLIES TEXT LENGTH:",len(head))
+                  print("PRE-REPLIES PREVIEW:",repr(head[:1100]))
+                  print("IMPORTANT: this is not yet a robust DOM/author verification; no statuses are changed.")
+              finally:
+                  browser.close()
+          PY
