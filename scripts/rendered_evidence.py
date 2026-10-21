@@ -7,7 +7,7 @@ FIXED_TEXT = re.compile(r"\b(?:this (?:issue|is) (?:has been |is )?fixed|this is
 
 def extract_visible_evidence(body, expected_title):
     boundary = re.search(r"(?m)^All Replies\s*\(\d+\)", body)
-    locked = re.search(r"(?mi)^This question is locked and replying has been disabled\\.$", body)
+    locked = re.search(r"(?mi)^This question is locked and replying has been disabled\.$", body)
     if not boundary and not locked:
         return {"verified": False, "reason": "reply_boundary_missing"}
     stop = boundary.start() if boundary else locked.start()
