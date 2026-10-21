@@ -1,0 +1,42 @@
+name: Inspect YouTube rendered thread
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Install Playwright browser
+        run: |
+          python3 -m pip install --quiet playwright
+          python3 -m playwright install --with-deps chromium
+      - name: Inspect rendered public thread
+        run: |
+          python3 - <<'PY'
+          from playwright.sync_api import sync_playwright
+          url='https://support.google.com/youtube/thread/473433364?hl=en'
+          with sync_playwright() as p:
+              browser=p.chromium.launch(headless=True)
+              page=browser.new_page(locale='en-US', viewport={'width':1280,'height':900})
+              try:
+                  response=page.goto(url,wait_until='domcontentloaded',timeout=45000)
+                  print('HTTP:',response.status if response else 'NO RESPONSE')
+                  page.wait_for_timeout(5000)
+                  print('Page title:',page.title()[:200])
+                  body=page.locator('body').inner_text(timeout=10000)
+                  print('Rendered body length:',len(body))
+                  print('Rendered body preview:',repr(body[:1000]))
+                  article=page.locator('article')
+                  print('Article count:',article.count())
+                  if article.count():
+                      detail=article.first.inner_text(timeout=5000)
+                      print('Rendered article length:',len(detail))
+                      print('Rendered article preview:',repr(detail[:800]))
+                  for phrase in ['This issue has been resolved','Hi Creators','YouTube Team']:
+                      print('Visible phrase',repr(phrase),phrase.lower() in body.lower())
+                  print('DIAGNOSTIC ONLY: rendering does not establish author authenticity or active outage.')
+              finally:
+                  browser.close()
+          PY
