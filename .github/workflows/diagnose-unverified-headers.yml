@@ -1,0 +1,46 @@
+name: Diagnose three unresolved thread structures
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Chromium
+        run: |
+          python3 -m pip install --quiet playwright
+          python3 -m playwright install --with-deps chromium
+      - name: Inspect header structure only
+        run: |
+          python3 - <<'PY'
+          import re
+          from playwright.sync_api import sync_playwright
+          examples={
+            "471253790":"Playback buffering issues in North America",
+            "468016641":"YouTube & YouTube TV signup and subscription management issues",
+            "462933624":"Voice search errors across multiple devices"
+          }
+          with sync_playwright() as p:
+              browser=p.chromium.launch(headless=True)
+              for thread_id, topic in examples.items():
+                  page=browser.new_page(locale="en-US")
+                  try:
+                      response=page.goto(f"https://support.google.com/youtube/thread/{thread_id}?hl=en",wait_until="domcontentloaded",timeout=40000)
+                      page.wait_for_timeout(3000)
+                      text=page.locator("body").inner_text(timeout=10000)
+                      lines=[x.strip() for x in text.splitlines() if x.strip()]
+                      print("THREAD",thread_id,"HTTP",response.status if response else None)
+                      print("TITLE",page.title()[:140])
+                      print("HEADER_LINES",repr(lines[:18]))
+                      print("REPLY_BOUNDARY",bool(re.search(r"(?m)^All Replies\\s*\\(\\d+\\)",text)))
+                      print("REPLY_MARKERS",[x[:70] for x in lines if re.search(r"reply|answer|comment",x,re.I)][:12])
+                      print("NOTE: review-only; no live feed update")
+                  except Exception as exc:
+                      print("THREAD_ERROR",thread_id,type(exc).__name__,str(exc)[:160])
+                  finally:
+                      page.close()
+              browser.close()
+          PY
