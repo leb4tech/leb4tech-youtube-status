@@ -1,0 +1,40 @@
+name: Diagnose YouTube issue posts
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Inspect issue links and structured page data
+        run: |
+          python3 -m pip -q install beautifulsoup4
+          python3 - <<'PY'
+          import re, urllib.request, html, json
+          from bs4 import BeautifulSoup
+          url='https://support.google.com/youtube/threads?thread_filter=%28purpose%3Aknown_issue%29&hl=en'
+          req=urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0'})
+          with urllib.request.urlopen(req, timeout=25) as res:
+              body=res.read(3000000).decode('utf-8','replace')
+              print('HTTP:',res.status,'page chars:',len(body))
+          soup=BeautifulSoup(body,'html.parser')
+          rows=[]
+          for a in soup.find_all('a',href=True):
+              href=html.unescape(a['href'])
+              label=' '.join(a.stripped_strings)
+              if ('/youtube/thread/' in href or '/youtube/threads/' in href) and label:
+                  rows.append((label[:160],href[:240]))
+          unique=list(dict.fromkeys(rows))
+          print('Unique labeled YouTube thread links:',len(unique))
+          for i,(title,href) in enumerate(unique[:15],1):
+              print(f'POST {i}: {title} | {href}')
+          text=soup.get_text(' ',strip=True)
+          for pattern in ['Known Issue','FIXED','Investigating']:
+              print('Visible text occurrences of',pattern,':',len(re.findall(re.escape(pattern),text,re.I)))
+          print('Scripts:',len(soup.find_all('script')))
+          print('JSON-LD:',len(soup.select('script[type="application/ld+json"]')))
+          if not unique:
+              print('NO EXTRACTABLE LABELED THREAD LINKS: page may use embedded data. Do not publish.')
+          PY
