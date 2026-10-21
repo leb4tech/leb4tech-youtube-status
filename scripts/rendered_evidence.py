@@ -7,9 +7,11 @@ FIXED_TEXT = re.compile(r"\b(?:this (?:issue|is) (?:has been |is )?fixed|this is
 
 def extract_visible_evidence(body, expected_title):
     boundary = re.search(r"(?m)^All Replies\s*\(\d+\)", body)
-    if not boundary:
+    locked = re.search(r"(?mi)^This question is locked and replying has been disabled\\.$", body)
+    if not boundary and not locked:
         return {"verified": False, "reason": "reply_boundary_missing"}
-    lines = [s.strip() for s in body[:boundary.start()].splitlines() if s.strip()]
+    stop = boundary.start() if boundary else locked.start()
+    lines = [s.strip() for s in body[:stop].splitlines() if s.strip()]
     title_positions = [i for i, s in enumerate(lines) if s == expected_title]
     if len(title_positions) != 1:
         return {"verified": False, "reason": "title_not_located_uniquely"}
@@ -35,4 +37,5 @@ def extract_visible_evidence(body, expected_title):
     fixed_confirmed = bool(FIXED.search(expected_title) and (label=="Fixed" or FIXED_TEXT.search(message)))
     return {"verified":True,"author":author,"status_label":label,
             "fixed_confirmed":fixed_confirmed,
-            "message_preview":message[:550],"reply_boundary":True}
+            "message_preview":message[:550],"reply_boundary":bool(boundary),
+            "locked_thread":bool(locked and not boundary)}
