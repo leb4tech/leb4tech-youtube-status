@@ -28,5 +28,20 @@ class EvidenceTests(unittest.TestCase):
         text = "Back\nJulia-TeamYouTube\nGoogle Employee\n•\nOriginal Poster\nAug 27, 2026\n[FIXED] Voice search\nFixed\nVoice search recovered."
         self.assertFalse(extract_visible_evidence(text, "[FIXED] Voice search")["verified"])
 
+    def test_google_employee_without_team_name_fixed(self):
+        for author, title, message in [
+            ("Nandini Bhalla","🚨 [Fixed] Playback buffering issues in North America","Update: This is fixed! You should now see playback working normally without buffering."),
+            ("Beatrice Y","🚨 [FIXED] YouTube & YouTube TV signup and subscription management issues","This issue is now fixed! You should now be able to sign up without errors.")
+        ]:
+            body = ("Back\\n" + author + "\\nGoogle Employee\\n•\\nOriginal Poster\\nOct 3, 2026\\n"
+                    + title + "\\nFixed\\n" + message + "\\nDetails\\nAll Replies (3)")
+            evidence = extract_visible_evidence(body, title)
+            self.assertTrue(evidence["verified"], evidence)
+            self.assertTrue(evidence["fixed_confirmed"], evidence)
+
+    def test_plain_author_without_google_badge_rejected(self):
+        body = "Back\\nNandini Bhalla\\nCommunity Member\\n•\\nOriginal Poster\\nOct 3, 2026\\n[FIXED] Issue\\nFixed\\nThis is fixed now.\\nDetails\\nAll Replies (1)"
+        self.assertFalse(extract_visible_evidence(body,"[FIXED] Issue")["verified"])
+
 if __name__ == "__main__":
     unittest.main()
