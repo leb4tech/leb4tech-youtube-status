@@ -1,0 +1,35 @@
+name: Inspect YouTube article content
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Inspect sanitized article structure
+        run: |
+          python3 -m pip install --quiet beautifulsoup4
+          python3 - <<'PY'
+          import urllib.request, collections, re
+          from bs4 import BeautifulSoup
+          url='https://support.google.com/youtube/thread/473433364?hl=en'
+          req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
+          with urllib.request.urlopen(req,timeout=25) as res:
+              soup=BeautifulSoup(res.read(2500000),'html.parser')
+          articles=soup.select('article')
+          print('Article count:',len(articles))
+          for i,article in enumerate(articles[:2]):
+              text=article.get_text(' ',strip=True)
+              print('ARTICLE',i,'text length:',len(text))
+              print('ARTICLE',i,'text preview:',text[:850])
+              print('ARTICLE',i,'tag:',article.name,'attributes:',str({k:v for k,v in article.attrs.items() if k in ('class','id','role')})[:400])
+              print('ARTICLE',i,'first child tag structures:')
+              for node in article.find_all(recursive=False)[:12]:
+                  print('  ',node.name,'class=',str(node.get('class',[]))[:140], 'text=',node.get_text(' ',strip=True)[:90])
+              print('ARTICLE',i,'top 15 tags:',collections.Counter(x.name for x in article.find_all()).most_common(15))
+              for word in ('Google Employee','Community Manager','YouTube Team','Original Poster'):
+                  print('has',word,':',word.lower() in text.lower())
+          print('This output is diagnostic only. No publication or incident status change.')
+          PY
