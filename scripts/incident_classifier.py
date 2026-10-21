@@ -4,8 +4,6 @@ Never infer an active outage from an unlabeled post, a generic alert emoji,
 or an excerpt alone. Statuses remain compatible with the Blogger widget.
 """
 import re
-import urllib.request
-from bs4 import BeautifulSoup
 
 FIXED_TAG = re.compile(r"\[\s*(?:fixed|resolved)\s*\]", re.I)
 ISSUE_TAG = re.compile(r"\[\s*(?:known\s+issue|ongoing\s+issue)\s*\]", re.I)
@@ -34,27 +32,15 @@ def classify(title, body_text=None):
         return "active", "explicit_issue_title_and_ongoing_statement"
     return "unverified", "no_ongoing_confirmation"
 
-def get_thread_text(url):
-    request = urllib.request.Request(url, headers={
-        "User-Agent": "Mozilla/5.0 (compatible; Leb4TechStatusMonitor/1.0)"
-    })
-    with urllib.request.urlopen(request, timeout=15) as response:
-        if response.status != 200:
-            raise RuntimeError("Thread HTTP " + str(response.status))
-        page = response.read(1500000).decode("utf-8", "replace")
-    soup = BeautifulSoup(page, "html.parser")
-    # Do not use comments/replies as evidence of an official ongoing outage.
-    # Extracting official message reliably needs verified DOM structure.
-    # For now keep tagged unresolved threads under review, not 'active'.
-    return None
-
 def classify_from_official_page(title, url):
+    """A headline-only feed cannot safely establish an active outage.
+
+    A future release may verify the original staff post with a validated
+    page selector. Until then, explicit FIXED tags are safe and the rest
+    remain unverified.
+    """
     if FIXED_TAG.search(title):
         return "fixed", "explicit_fixed_title"
     if ISSUE_TAG.search(title):
-        try:
-            get_thread_text(url)
-        except Exception:
-            pass
         return "unverified", "official_body_not_verified"
     return "unverified", "no_explicit_issue_marker"
