@@ -1,0 +1,44 @@
+name: Diagnose remaining staff author formats
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Playwright
+        run: |
+          python3 -m pip install --quiet playwright
+          python3 -m playwright install --with-deps chromium
+      - name: Inspect two official thread headers
+        run: |
+          python3 - <<'PY'
+          from playwright.sync_api import sync_playwright
+          import sys
+          sys.path.insert(0, "scripts")
+          from rendered_evidence import extract_visible_evidence
+          ids = ["471253790","468016641"]
+          with sync_playwright() as p:
+              browser=p.chromium.launch(headless=True)
+              for tid in ids:
+                  page=browser.new_page(locale="en-US")
+                  try:
+                      page.goto(f"https://support.google.com/youtube/thread/{tid}?hl=en", wait_until="domcontentloaded", timeout=40000)
+                      page.wait_for_timeout(3000)
+                      text=page.locator("body").inner_text(timeout=10000)
+                      lines=[x.strip() for x in text.splitlines() if x.strip()]
+                      title=page.title().rsplit(" - YouTube Community",1)[0]
+                      e=extract_visible_evidence(text,title)
+                      print("THREAD",tid)
+                      print("HEADER_LINES",repr(lines[:17]))
+                      print("VERIFY_REASON",e.get("reason"))
+                      print("NOTE: diagnostic-only, no public status change")
+                  except Exception as err:
+                      print("ERROR",tid,type(err).__name__,str(err)[:160])
+                  finally:
+                      page.close()
+              browser.close()
+          PY
