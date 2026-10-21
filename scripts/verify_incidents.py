@@ -58,6 +58,10 @@ def main():
     OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2)+"\n",encoding="utf-8")
     print("SUMMARY",len(records),"verified fixed",sum(x["review_status"]=="fixed" for x in records),
           "unverified",sum(x["review_status"]=="unverified" for x in records))
+    for rec in records:
+        if rec["review_status"] == "unverified":
+            print("REVIEW_REQUIRED", rec["id"], "reason:", rec["reason"],
+                  "label:", rec.get("status_label"), "title:", rec["title_en"][:120])
 
 if __name__ == "__main__":
     main()
