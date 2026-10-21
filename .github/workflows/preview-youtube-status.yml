@@ -1,0 +1,69 @@
+name: Preview YouTube status data
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Extract and validate candidate posts
+        run: |
+          python3 -m pip -q install beautifulsoup4
+          python3 - <<'PY'
+          import urllib.request, re, json, datetime, html
+          from urllib.parse import urljoin, urlsplit, urlunsplit
+          from bs4 import BeautifulSoup
+          source='https://support.google.com/youtube/threads?thread_filter=%28purpose%3Aknown_issue%29&hl=en'
+          req=urllib.request.Request(source,headers={'User-Agent':'Mozilla/5.0 (compatible; Leb4TechStatusMonitor/0.1)'})
+          with urllib.request.urlopen(req,timeout=25) as r:
+              if r.status!=200: raise RuntimeError('Unexpected HTTP status')
+              doc=r.read(3000000).decode('utf-8','replace')
+          soup=BeautifulSoup(doc,'html.parser')
+          items=[]; seen=set()
+          for a in soup.find_all('a',href=True):
+              link=urljoin('https://support.google.com',html.unescape(a['href']))
+              path=urlsplit(link).path
+              if not re.match(r'^/youtube/thread/\\d+',path): continue
+              post_id=re.search(r'/thread/(\\d+)',path).group(1)
+              if post_id in seen: continue
+              strings=list(a.stripped_strings)
+              if not strings: continue
+              text=' '.join(strings)
+              # Title extraction is deliberately conservative: use first element
+              # and trim before known body greeting, but flag uncertainty for review.
+              first=strings[0].strip()
+              if len(first)>180:
+                  first=re.split(r'\\b(?:Hi Creators|Hey Everyone|Hi all|Update:)\\b',first,maxsplit=1,flags=re.I)[0].strip()
+              title=re.sub(r'\\s+',' ',first)[:180]
+              if len(title)<8: continue
+              lower=title.lower()
+              fixed=bool(re.search(r'\\[\\s*fixed\\s*\\]',title,re.I))
+              known=bool(re.search(r'\\[\\s*known\\s+issue\\s*\\]',title,re.I))
+              status='fixed' if fixed else ('active_candidate' if known else 'unverified')
+              # Clean URL to canonical thread ID; avoids depending on locale slug encoding.
+              clean='https://support.google.com/youtube/thread/'+post_id+'?hl=en'
+              items.append({'id':post_id,'title_en':title,'status_candidate':status,
+                  'url':clean,'needs_review':True,'excerpt_en':text[:260]})
+              seen.add(post_id)
+          payload={'source':source,'checked_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+             'publication_ready':False,'items':items}
+          import os
+          os.makedirs('preview',exist_ok=True)
+          with open('preview/status-preview.json','w',encoding='utf-8') as f:
+              json.dump(payload,f,ensure_ascii=False,indent=2)
+          print('POSTS:',len(items))
+          print('FIXED:',sum(x['status_candidate']=='fixed' for x in items))
+          print('ACTIVE CANDIDATES:',sum(x['status_candidate']=='active_candidate' for x in items))
+          print('UNVERIFIED:',sum(x['status_candidate']=='unverified' for x in items))
+          for x in items[:12]:
+              print(x['status_candidate'].upper(),x['id'],x['title_en'][:110])
+          if len(items)<1: raise RuntimeError('No structured posts extracted; do not publish')
+          PY
+      - name: Save preview for review (not published)
+        uses: actions/upload-artifact@v4
+        with:
+          name: youtube-status-preview
+          path: preview/status-preview.json
+          retention-days: 7
