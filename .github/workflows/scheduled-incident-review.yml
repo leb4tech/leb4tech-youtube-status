@@ -1,0 +1,28 @@
+name: Scheduled official incident review
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 */6 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: scheduled-incident-review
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install browser
+        run: |
+          python3 -m pip install --quiet playwright
+          python3 -m playwright install --with-deps chromium
+      - name: Review incidents without publishing
+        run: python3 scripts/verify_incidents.py
+      - name: Upload review report
+        uses: actions/upload-artifact@v4
+        with:
+          name: scheduled-incident-review
+          path: preview/incident-verification.json
+          retention-days: 7
