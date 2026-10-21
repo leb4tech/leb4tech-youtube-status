@@ -1,0 +1,39 @@
+name: Diagnose unmatched YouTube authors
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Install browser
+        run: |
+          python3 -m pip install --quiet playwright
+          python3 -m playwright install --with-deps chromium
+      - name: Inspect unmatched author structure
+        run: |
+          python3 - <<'PY'
+          import re
+          from playwright.sync_api import sync_playwright
+          for_id=['468026869','463279672']
+          with sync_playwright() as p:
+              browser=p.chromium.launch(headless=True)
+              for thread_id in for_id:
+                  page=browser.new_page(locale='en-US')
+                  try:
+                      response=page.goto(f'https://support.google.com/youtube/thread/{thread_id}?hl=en',wait_until='domcontentloaded',timeout=35000)
+                      page.wait_for_timeout(3000)
+                      body=page.locator('body').inner_text()
+                      head=re.split(r'(?m)^All Replies\s*\(\d+\)',body,maxsplit=1)[0]
+                      print('THREAD',thread_id,'HTTP',response.status if response else None)
+                      print('TITLE',page.title()[:180])
+                      print('PRE_REPLY_LINES',repr([s.strip() for s in head.splitlines() if s.strip()][:24]))
+                      print('NOTE: Diagnostic only; no statuses are changed.')
+                  except Exception as error:
+                      print('THREAD_ERROR',thread_id,type(error).__name__,str(error)[:150])
+                  finally:
+                      page.close()
+              browser.close()
+          PY
