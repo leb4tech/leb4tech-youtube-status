@@ -1,0 +1,64 @@
+name: Preview verified YouTube incidents
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install browser
+        run: |
+          python3 -m pip install --quiet playwright
+          python3 -m playwright install --with-deps chromium
+      - name: Verify official post evidence in read-only mode
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from playwright.sync_api import sync_playwright
+          import sys
+          sys.path.insert(0, "scripts")
+          from rendered_evidence import extract_visible_evidence
+
+          with open("data/youtube-status.json", encoding="utf-8") as f:
+              feed = json.load(f)
+          samples = feed.get("items", [])[:8]
+          results = []
+          with sync_playwright() as p:
+              browser = p.chromium.launch(headless=True)
+              for item in samples:
+                  page = browser.new_page(locale="en-US")
+                  record = {"id": item["id"], "url": item["url"], "original_status": item["status"]}
+                  try:
+                      response = page.goto(item["url"], wait_until="domcontentloaded", timeout=35000)
+                      page.wait_for_timeout(2500)
+                      body = page.locator("body").inner_text(timeout=10000)
+                      evidence = extract_visible_evidence(body, item["title_en"])
+                      record["http_status"] = response.status if response else None
+                      record["evidence"] = evidence
+                  except Exception as exc:
+                      record["evidence"] = {"verified":False,"reason":"fetch_or_render_error","detail":str(exc)[:120]}
+                  finally:
+                      page.close()
+                  results.append(record)
+                  e = record["evidence"]
+                  print("THREAD", item["id"],"verified",e.get("verified"),"label",e.get("status_label"),"reason",e.get("reason"))
+              browser.close()
+          os.makedirs("preview",exist_ok=True)
+          output = {
+              "publication_ready":False,
+              "note":"Preview only. Visible markers alone do not establish ongoing active status. Nothing is published.",
+              "records":results
+          }
+          with open("preview/verified-incidents.json","w",encoding="utf-8") as f:
+              json.dump(output,f,ensure_ascii=False,indent=2)
+          print("Reviewed",len(results),"verified rendered structures",sum(bool(x["evidence"].get("verified")) for x in results))
+          PY
+      - name: Upload review file only
+        uses: actions/upload-artifact@v4
+        with:
+          name: verified-incident-review
+          path: preview/verified-incidents.json
+          retention-days: 7
