@@ -25,8 +25,8 @@ jobs:
           for a in soup.find_all('a',href=True):
               link=urljoin('https://support.google.com',html.unescape(a['href']))
               path=urlsplit(link).path
-              if not re.match(r'^/youtube/thread/\\d+',path): continue
-              post_id=re.search(r'/thread/(\\d+)',path).group(1)
+              if not re.match(r'^/youtube/thread/\d+',path): continue
+              post_id=re.search(r'/thread/(\d+)',path).group(1)
               if post_id in seen: continue
               strings=list(a.stripped_strings)
               if not strings: continue
@@ -35,12 +35,12 @@ jobs:
               # and trim before known body greeting, but flag uncertainty for review.
               first=strings[0].strip()
               if len(first)>180:
-                  first=re.split(r'\\b(?:Hi Creators|Hey Everyone|Hi all|Update:)\\b',first,maxsplit=1,flags=re.I)[0].strip()
-              title=re.sub(r'\\s+',' ',first)[:180]
+                  first=re.split(r'\b(?:Hi Creators|Hey Everyone|Hi all|Update:)\b',first,maxsplit=1,flags=re.I)[0].strip()
+              title=re.sub(r'\s+',' ',first)[:180]
               if len(title)<8: continue
               lower=title.lower()
-              fixed=bool(re.search(r'\\[\\s*fixed\\s*\\]',title,re.I))
-              known=bool(re.search(r'\\[\\s*known\\s+issue\\s*\\]',title,re.I))
+              fixed=bool(re.search(r'\[\s*fixed\s*\]',title,re.I))
+              known=bool(re.search(r'\[\s*known\s+issue\s*\]',title,re.I))
               status='fixed' if fixed else ('active_candidate' if known else 'unverified')
               # Clean URL to canonical thread ID; avoids depending on locale slug encoding.
               clean='https://support.google.com/youtube/thread/'+post_id+'?hl=en'
