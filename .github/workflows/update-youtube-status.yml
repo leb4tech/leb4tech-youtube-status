@@ -1,0 +1,33 @@
+name: Update YouTube status feed
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: youtube-status-feed
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install parser
+        run: python3 -m pip install --quiet beautifulsoup4
+      - name: Fetch and validate posts
+        run: python3 scripts/update_youtube_status.py
+      - name: Commit JSON only when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/youtube-status.json
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "Update YouTube status JSON feed"
+            git push
+          fi
