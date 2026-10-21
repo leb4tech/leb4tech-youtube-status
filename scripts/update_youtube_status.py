@@ -10,6 +10,7 @@ from urllib.parse import urljoin, urlsplit, urlencode
 import time
 from bs4 import BeautifulSoup
 from status_tracking import reconcile
+from incident_classifier import classify_from_official_page
 
 SOURCE = "https://support.google.com/youtube/threads?thread_filter=%28purpose%3Aknown_issue%29&hl=en"
 OUTPUT = Path("data/youtube-status.json")
@@ -55,13 +56,12 @@ def main():
         if len(title) < 8:
             continue
         # Only report 'fixed' when the headline explicitly labels it.
-        fixed = bool(re.search(r"\[\s*fixed\s*\]", title, re.I))
-        # Unlabeled content is NOT automatically an active outage.
-        status = "fixed" if fixed else "unverified"
+        status, evidence = classify_from_official_page(title, f"https://support.google.com/youtube/thread/{post_id}?hl=en")
         items.append({
             "id": post_id,
             "title_en": title[:180],
             "status": status,
+            "status_evidence": evidence,
             "url": f"https://support.google.com/youtube/thread/{post_id}?hl=en",
             "excerpt_en": re.sub(r"\s+", " ", " ".join(parts))[:300],
         })
@@ -99,11 +99,12 @@ def main():
     items, history, changes = reconcile(items, old_feed, old_history, generated)
     print("Tracking:", changes)
     payload = {
-        "version": 3,
+        "version": 4,
         "source": SOURCE,
         "checked_at_utc": generated,
         "scope": "Recent visible known-issue forum threads, not all YouTube incidents",
-        "active_count_confirmed": None,
+        "active_count_confirmed": sum(x["status"] == "active" for x in items),
+        "active_detection_note": "Conservative: only explicitly verified official ongoing incidents qualify; unavailable details remain unverified",
         "date_field_note": "first_seen_at and status_observed_since are crawler observation times, not official post dates",
         "items": items[:30],
     }
