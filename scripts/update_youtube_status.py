@@ -9,9 +9,11 @@ from pathlib import Path
 from urllib.parse import urljoin, urlsplit, urlencode
 import time
 from bs4 import BeautifulSoup
+from status_tracking import reconcile
 
 SOURCE = "https://support.google.com/youtube/threads?thread_filter=%28purpose%3Aknown_issue%29&hl=en"
 OUTPUT = Path("data/youtube-status.json")
+HISTORY = Path("data/status-history.json")
 
 def translate_ar(text):
     """Best-effort unofficial public translation endpoint; may be rate-limited."""
@@ -67,9 +69,11 @@ def main():
     if len(items) < 5:
         raise RuntimeError(f"Too few extracted threads ({len(items)}); preserving previous feed")
     previous_items = {}
+    old_feed = {}
     if OUTPUT.exists():
         try:
-            previous_items = {x["id"]:x for x in json.loads(OUTPUT.read_text(encoding="utf-8")).get("items", [])}
+            old_feed = json.loads(OUTPUT.read_text(encoding="utf-8"))
+            previous_items = {x["id"]:x for x in old_feed.get("items", [])}
         except (OSError, ValueError, KeyError):
             pass
     translated_count = 0
@@ -86,16 +90,26 @@ def main():
         item["summary_ar"] = ("أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي." if item["status"] == "fixed" else None)
     print("New Arabic translations:", translated_count)
     generated = dt.datetime.now(dt.timezone.utc).isoformat()
+    old_history = {}
+    if HISTORY.exists():
+        try:
+            old_history = json.loads(HISTORY.read_text(encoding="utf-8"))
+        except (OSError, ValueError) as exc:
+            raise RuntimeError("Cannot read existing history; refusing to overwrite") from exc
+    items, history, changes = reconcile(items, old_feed, old_history, generated)
+    print("Tracking:", changes)
     payload = {
-        "version": 2,
+        "version": 3,
         "source": SOURCE,
         "checked_at_utc": generated,
         "scope": "Recent visible known-issue forum threads, not all YouTube incidents",
         "active_count_confirmed": None,
+        "date_field_note": "first_seen_at and status_observed_since are crawler observation times, not official post dates",
         "items": items[:30],
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    HISTORY.write_text(json.dumps(history, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Saved {len(payload['items'])} threads; fixed={sum(x['status']=='fixed' for x in items)}, unverified={sum(x['status']=='unverified' for x in items)}")
     print("No active-outage count inferred; timestamps are fetch times, not post times.")
 
