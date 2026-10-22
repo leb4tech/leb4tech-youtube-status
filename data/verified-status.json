@@ -1,10 +1,30 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-10-21T22:05:17.746666+00:00",
+  "checked_at_utc": "2026-10-22T05:20:30.465663+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "420372066",
+      "title_ar": "🚨 رسالة منبثقة تم إرسالها بالخطأ",
+      "title_en": "🚨 Pop up Message Sent out in Error",
+      "url": "https://support.google.com/youtube/thread/420372066?hl=en",
+      "status": "unverified",
+      "status_reason": "known_issue_without_current_ongoing_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "467480477",
+      "title_ar": "مشكلات في تسجيل الدخول إلى YouTube على أجهزة التلفزيون ووحدات تحكم الألعاب",
+      "title_en": "🚨 [Fixed] Issues logging into YouTube on TVs and gaming consoles",
+      "url": "https://support.google.com/youtube/thread/467480477?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
     {
       "id": "473433364",
       "title_ar": "مشكلات تتعلق بتحليلات YouTube",
@@ -76,30 +96,10 @@
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
-      "id": "420372066",
-      "title_ar": "🚨 رسالة منبثقة تم إرسالها بالخطأ",
-      "title_en": "🚨 Pop up Message Sent out in Error",
-      "url": "https://support.google.com/youtube/thread/420372066?hl=en",
-      "status": "unverified",
-      "status_reason": "known_issue_without_current_ongoing_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
       "id": "451946491",
       "title_ar": "وضع الصورة داخل الصورة لا يعمل (خاص بنظام iOS)",
       "title_en": "🚨 [Fixed] Picture-in-Picture Mode not working (Mainly iOS)",
       "url": "https://support.google.com/youtube/thread/451946491?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "467480477",
-      "title_ar": "مشكلات في تسجيل الدخول إلى YouTube على أجهزة التلفزيون ووحدات تحكم الألعاب",
-      "title_en": "🚨 [Fixed] Issues logging into YouTube on TVs and gaming consoles",
-      "url": "https://support.google.com/youtube/thread/467480477?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
