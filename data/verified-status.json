@@ -1,30 +1,10 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-10-23T17:33:32.408075+00:00",
+  "checked_at_utc": "2026-10-23T21:39:13.895933+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
-    {
-      "id": "470158580",
-      "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
-      "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
-      "url": "https://support.google.com/youtube/thread/470158580?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "465617845",
-      "title_ar": "مشكلات تحميل تطبيق YouTube TV وYouTube (تقارير في المقام الأول من تكساس، الولايات المتحدة)",
-      "title_en": "🚨 [FIXED] YouTube TV & YouTube App Loading Issues (Reports primarily from Texas, US)",
-      "url": "https://support.google.com/youtube/thread/465617845?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
     {
       "id": "468791912",
       "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
@@ -36,10 +16,40 @@
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
+      "id": "468026869",
+      "title_ar": "أخطاء تحميل التحليلات في YouTube Studio",
+      "title_en": "🚨 [FIXED] Analytics loading errors in YouTube Studio",
+      "url": "https://support.google.com/youtube/thread/468026869?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "470158580",
+      "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
+      "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
+      "url": "https://support.google.com/youtube/thread/470158580?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
       "id": "473433364",
       "title_ar": "مشكلات تتعلق بتحليلات YouTube",
       "title_en": "🚨 [FIXED] Issues with YouTube analytics",
       "url": "https://support.google.com/youtube/thread/473433364?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "465617845",
+      "title_ar": "مشكلات تحميل تطبيق YouTube TV وYouTube (تقارير في المقام الأول من تكساس، الولايات المتحدة)",
+      "title_en": "🚨 [FIXED] YouTube TV & YouTube App Loading Issues (Reports primarily from Texas, US)",
+      "url": "https://support.google.com/youtube/thread/465617845?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
@@ -80,16 +90,6 @@
       "title_ar": "مشكلات في تسجيل الدخول إلى YouTube على أجهزة التلفزيون ووحدات تحكم الألعاب",
       "title_en": "🚨 [Fixed] Issues logging into YouTube on TVs and gaming consoles",
       "url": "https://support.google.com/youtube/thread/467480477?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "468026869",
-      "title_ar": "أخطاء تحميل التحليلات في YouTube Studio",
-      "title_en": "🚨 [FIXED] Analytics loading errors in YouTube Studio",
-      "url": "https://support.google.com/youtube/thread/468026869?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
