@@ -1,12 +1,26 @@
 {
   "version": 4,
   "source": "https://support.google.com/youtube/threads?thread_filter=%28purpose%3Aknown_issue%29&hl=en",
-  "checked_at_utc": "2026-10-24T12:43:47.671339+00:00",
+  "checked_at_utc": "2026-10-24T16:38:37.503444+00:00",
   "scope": "Recent visible known-issue forum threads, not all YouTube incidents",
   "active_count_confirmed": 0,
   "active_detection_note": "Conservative: only explicitly verified official ongoing incidents qualify; unavailable details remain unverified",
   "date_field_note": "first_seen_at and status_observed_since are crawler observation times, not official post dates",
   "items": [
+    {
+      "id": "471253790",
+      "title_en": "🚨 [Fixed] Playback buffering issues in North America",
+      "status": "fixed",
+      "status_evidence": "explicit_fixed_title",
+      "url": "https://support.google.com/youtube/thread/471253790?hl=en",
+      "excerpt_en": "🚨 [Fixed] Playback buffering issues in North America Update: This is fixed! You should now see playback working normally without buffering. Let us know h… 0 Recommended Answers 7 Replies 25 Upvotes",
+      "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
+      "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
+      "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
     {
       "id": "473433364",
       "title_en": "🚨 [FIXED] Issues with YouTube analytics",
@@ -17,7 +31,7 @@
       "title_ar": "مشكلات تتعلق بتحليلات YouTube",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -31,7 +45,7 @@
       "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -45,7 +59,7 @@
       "title_ar": "أخطاء تحميل التحليلات في YouTube Studio",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -59,7 +73,7 @@
       "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -73,7 +87,7 @@
       "title_ar": "مشكلات تحميل تطبيق YouTube TV وYouTube (تقارير في المقام الأول من تكساس، الولايات المتحدة)",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -87,7 +101,7 @@
       "title_ar": "يواجه منشئو المحتوى مشاكل في نقل قناتهم على YouTube إلى حساب علامة تجارية",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -101,7 +115,7 @@
       "title_ar": "غير قادر على تعديل البث المباشر عبر الهاتف المحمول على تطبيق Android الرئيسي - Creators",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -115,7 +129,7 @@
       "title_ar": "🚨 رسالة منبثقة تم إرسالها بالخطأ",
       "summary_ar": null,
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -129,7 +143,7 @@
       "title_ar": "مشكلات في تسجيل الدخول إلى YouTube على أجهزة التلفزيون ووحدات تحكم الألعاب",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -143,7 +157,7 @@
       "title_ar": "مشكلات تتعلق بالتسميات التوضيحية للبث المباشر على YouTube",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -157,7 +171,7 @@
       "title_ar": "تأخير الإيرادات في \"استوديو YouTube\" (ابتداءً من 8 أغسطس)",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -167,11 +181,11 @@
       "status": "fixed",
       "status_evidence": "explicit_fixed_title",
       "url": "https://support.google.com/youtube/thread/451946491?hl=en",
-      "excerpt_en": "🚨 [Fixed] Picture-in-Picture Mode not working (Mainly iOS) Update: Picture-in-Picture (PiP) should now work as expected when exiting the YouTube app. To enable… 0 Recommended Answers 5143 Replies 11923 Upvotes",
+      "excerpt_en": "🚨 [Fixed] Picture-in-Picture Mode not working (Mainly iOS) Update: Picture-in-Picture (PiP) should now work as expected when exiting the YouTube app. To enable… 0 Recommended Answers 5143 Replies 11924 Upvotes",
       "title_ar": "وضع الصورة داخل الصورة لا يعمل (خاص بنظام iOS)",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -185,21 +199,7 @@
       "title_ar": "مشكلات استخدام تطبيق YouTube للجوال",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
-      "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "471253790",
-      "title_en": "🚨 [Fixed] Playback buffering issues in North America",
-      "status": "fixed",
-      "status_evidence": "explicit_fixed_title",
-      "url": "https://support.google.com/youtube/thread/471253790?hl=en",
-      "excerpt_en": "🚨 [Fixed] Playback buffering issues in North America Update: This is fixed! You should now see playback working normally without buffering. Let us know h… 0 Recommended Answers 7 Replies 25 Upvotes",
-      "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
-      "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -213,7 +213,7 @@
       "title_ar": "مشكلات الاشتراك وإدارة الاشتراكات في YouTube وYouTube TV",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -227,7 +227,7 @@
       "title_ar": "قوائم التشغيل مثل \"المشاهدة لاحقًا\" تعرض مقاطع الفيديو جزئيًا",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -241,7 +241,7 @@
       "title_ar": "اختفاء تفاصيل الفيديو والتعليقات بعد الخروج من وضع ملء الشاشة",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -255,7 +255,7 @@
       "title_ar": "1 من 10 تصنيف مفقود في تطبيق Studio للجوال",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -269,7 +269,7 @@
       "title_ar": "أخطاء البحث الصوتي عبر أجهزة متعددة",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -283,7 +283,7 @@
       "title_ar": "رسالة خطأ عند البحث عن \"كريستيانو رونالدو\" على اليوتيوب",
       "summary_ar": "أعلن فريق YouTube إصلاح المشكلة. التفاصيل في المصدر الرسمي.",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-24T12:43:47.671339+00:00",
+      "last_seen_at": "2026-10-24T16:38:37.503444+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00"
     }
