@@ -1,10 +1,20 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-10-23T21:39:13.895933+00:00",
+  "checked_at_utc": "2026-10-24T05:00:21.224643+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "473433364",
+      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
+      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
+      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
     {
       "id": "468791912",
       "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
@@ -30,16 +40,6 @@
       "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
       "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
       "url": "https://support.google.com/youtube/thread/470158580?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "473433364",
-      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
-      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
-      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
