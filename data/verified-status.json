@@ -1,10 +1,20 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-10-25T16:48:27.522931+00:00",
+  "checked_at_utc": "2026-10-25T21:13:34.987961+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "468026869",
+      "title_ar": "أخطاء تحميل التحليلات في YouTube Studio",
+      "title_en": "🚨 [FIXED] Analytics loading errors in YouTube Studio",
+      "url": "https://support.google.com/youtube/thread/468026869?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
     {
       "id": "459660973",
       "title_ar": "اختفاء تفاصيل الفيديو والتعليقات بعد الخروج من وضع ملء الشاشة",
@@ -60,16 +70,6 @@
       "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
       "title_en": "🚨 [Fixed] Playback buffering issues in North America",
       "url": "https://support.google.com/youtube/thread/471253790?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "468026869",
-      "title_ar": "أخطاء تحميل التحليلات في YouTube Studio",
-      "title_en": "🚨 [FIXED] Analytics loading errors in YouTube Studio",
-      "url": "https://support.google.com/youtube/thread/468026869?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
