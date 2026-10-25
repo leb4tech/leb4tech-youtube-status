@@ -1,10 +1,20 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-10-25T11:59:04.214611+00:00",
+  "checked_at_utc": "2026-10-25T16:48:27.522931+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "459660973",
+      "title_ar": "اختفاء تفاصيل الفيديو والتعليقات بعد الخروج من وضع ملء الشاشة",
+      "title_en": "🚨 [FIXED] Video Details and Comments Disappearing After Exiting Full Screen",
+      "url": "https://support.google.com/youtube/thread/459660973?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
     {
       "id": "463279672",
       "title_ar": "مشكلات تتعلق بالتسميات التوضيحية للبث المباشر على YouTube",
@@ -160,16 +170,6 @@
       "title_ar": "قوائم التشغيل مثل \"المشاهدة لاحقًا\" تعرض مقاطع الفيديو جزئيًا",
       "title_en": "🚨 [Fixed] Playlists such as Watch Later partially displaying videos",
       "url": "https://support.google.com/youtube/thread/462538290?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "459660973",
-      "title_ar": "اختفاء تفاصيل الفيديو والتعليقات بعد الخروج من وضع ملء الشاشة",
-      "title_en": "🚨 [FIXED] Video Details and Comments Disappearing After Exiting Full Screen",
-      "url": "https://support.google.com/youtube/thread/459660973?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
