@@ -1,10 +1,30 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-10-27T05:33:34.923001+00:00",
+  "checked_at_utc": "2026-10-27T12:39:44.215306+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "471253790",
+      "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
+      "title_en": "🚨 [Fixed] Playback buffering issues in North America",
+      "url": "https://support.google.com/youtube/thread/471253790?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "467480477",
+      "title_ar": "مشكلات في تسجيل الدخول إلى YouTube على أجهزة التلفزيون ووحدات تحكم الألعاب",
+      "title_en": "🚨 [Fixed] Issues logging into YouTube on TVs and gaming consoles",
+      "url": "https://support.google.com/youtube/thread/467480477?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
     {
       "id": "465617845",
       "title_ar": "مشكلات تحميل تطبيق YouTube TV وYouTube (تقارير في المقام الأول من تكساس، الولايات المتحدة)",
@@ -76,16 +96,6 @@
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
-      "id": "471253790",
-      "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
-      "title_en": "🚨 [Fixed] Playback buffering issues in North America",
-      "url": "https://support.google.com/youtube/thread/471253790?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
       "id": "451076558",
       "title_ar": "يواجه منشئو المحتوى مشاكل في نقل قناتهم على YouTube إلى حساب علامة تجارية",
       "title_en": "🚨[Fixed] Creators having issues moving their YouTube channel to a Brand Account",
@@ -112,16 +122,6 @@
       "url": "https://support.google.com/youtube/thread/420372066?hl=en",
       "status": "unverified",
       "status_reason": "known_issue_without_current_ongoing_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "467480477",
-      "title_ar": "مشكلات في تسجيل الدخول إلى YouTube على أجهزة التلفزيون ووحدات تحكم الألعاب",
-      "title_en": "🚨 [Fixed] Issues logging into YouTube on TVs and gaming consoles",
-      "url": "https://support.google.com/youtube/thread/467480477?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
