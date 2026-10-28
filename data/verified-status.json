@@ -1,10 +1,20 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-10-28T13:31:04.006837+00:00",
+  "checked_at_utc": "2026-10-28T22:50:55.735767+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "474998367",
+      "title_ar": "مشاكل تحميل اليوتيوب",
+      "title_en": "🚨 [Fixed] YouTube Loading Issues",
+      "url": "https://support.google.com/youtube/thread/474998367?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
+      "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
+    },
     {
       "id": "473433364",
       "title_ar": "مشكلات تتعلق بتحليلات YouTube",
@@ -190,16 +200,6 @@
       "title_ar": "أخطاء البحث الصوتي عبر أجهزة متعددة",
       "title_en": "🚨 [FIXED] Voice search errors across multiple devices",
       "url": "https://support.google.com/youtube/thread/462933624?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "441226786",
-      "title_ar": "رسالة خطأ عند البحث عن \"كريستيانو رونالدو\" على اليوتيوب",
-      "title_en": "🚨[FIXED] Error message when searching ‘Cristiano Ronaldo’ on YouTube",
-      "url": "https://support.google.com/youtube/thread/441226786?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
