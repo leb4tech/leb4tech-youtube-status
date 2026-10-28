@@ -1,10 +1,20 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-10-28T06:16:03.933708+00:00",
+  "checked_at_utc": "2026-10-28T13:31:04.006837+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "473433364",
+      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
+      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
+      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
     {
       "id": "463279672",
       "title_ar": "مشكلات تتعلق بالتسميات التوضيحية للبث المباشر على YouTube",
@@ -70,16 +80,6 @@
       "title_ar": "اختفاء تفاصيل الفيديو والتعليقات بعد الخروج من وضع ملء الشاشة",
       "title_en": "🚨 [FIXED] Video Details and Comments Disappearing After Exiting Full Screen",
       "url": "https://support.google.com/youtube/thread/459660973?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "473433364",
-      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
-      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
-      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
