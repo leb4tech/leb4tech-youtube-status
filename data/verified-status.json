@@ -1,10 +1,30 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-10-29T13:41:34.984896+00:00",
+  "checked_at_utc": "2026-10-29T22:58:15.240946+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "474998367",
+      "title_ar": "مشاكل تحميل اليوتيوب",
+      "title_en": "🚨 [Fixed] YouTube Loading Issues",
+      "url": "https://support.google.com/youtube/thread/474998367?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
+      "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
+    },
+    {
+      "id": "463279672",
+      "title_ar": "مشكلات تتعلق بالتسميات التوضيحية للبث المباشر على YouTube",
+      "title_en": "🚨[Fixed] Issues with YouTube Livestream Captions",
+      "url": "https://support.google.com/youtube/thread/463279672?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
     {
       "id": "473433364",
       "title_ar": "مشكلات تتعلق بتحليلات YouTube",
@@ -16,14 +36,14 @@
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
-      "id": "474998367",
-      "title_ar": "مشاكل تحميل اليوتيوب",
-      "title_en": "🚨 [Fixed] YouTube Loading Issues",
-      "url": "https://support.google.com/youtube/thread/474998367?hl=en",
+      "id": "468791912",
+      "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
+      "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
+      "url": "https://support.google.com/youtube/thread/468791912?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
-      "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
       "id": "467480477",
@@ -40,16 +60,6 @@
       "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
       "title_en": "🚨 [Fixed] Playback buffering issues in North America",
       "url": "https://support.google.com/youtube/thread/471253790?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "463279672",
-      "title_ar": "مشكلات تتعلق بالتسميات التوضيحية للبث المباشر على YouTube",
-      "title_en": "🚨[Fixed] Issues with YouTube Livestream Captions",
-      "url": "https://support.google.com/youtube/thread/463279672?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
@@ -90,16 +100,6 @@
       "title_ar": "اختفاء تفاصيل الفيديو والتعليقات بعد الخروج من وضع ملء الشاشة",
       "title_en": "🚨 [FIXED] Video Details and Comments Disappearing After Exiting Full Screen",
       "url": "https://support.google.com/youtube/thread/459660973?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "468791912",
-      "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
-      "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
-      "url": "https://support.google.com/youtube/thread/468791912?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
