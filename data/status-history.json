@@ -1,14 +1,14 @@
 {
   "version": 1,
   "time_meaning": "Crawler observation time (UTC), not official YouTube publication or fix time",
-  "updated_at_utc": "2026-10-30T19:29:03.557427+00:00",
+  "updated_at_utc": "2026-10-30T23:51:26.933454+00:00",
   "threads": {
     "473433364": {
       "id": "473433364",
       "title_en": "🚨 [FIXED] Issues with YouTube analytics",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -18,7 +18,7 @@
       "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -28,7 +28,7 @@
       "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -38,7 +38,7 @@
       "title_en": "🚨 [FIXED] Analytics loading errors in YouTube Studio",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -48,7 +48,7 @@
       "title_en": "🚨[Fixed] Issues with YouTube Livestream Captions",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -58,7 +58,7 @@
       "title_en": "🚨 [FIXED] Unable to edit mobile live streams on Android Main App - Creators",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -68,7 +68,7 @@
       "title_en": "🚨 [FIXED] Revenue delay in YouTube Studio (Starting Aug 8)",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -78,7 +78,7 @@
       "title_en": "🚨 Pop up Message Sent out in Error",
       "status": "unverified",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -88,7 +88,7 @@
       "title_en": "🚨 [Fixed] Picture-in-Picture Mode not working (Mainly iOS)",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -98,7 +98,7 @@
       "title_en": "🚨 [Fixed] Issues logging into YouTube on TVs and gaming consoles",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -108,7 +108,7 @@
       "title_en": "🚨 [FIXED] Issues using YouTube Mobile App",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -118,7 +118,7 @@
       "title_en": "🚨[Fixed] Creators having issues moving their YouTube channel to a Brand Account",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -128,7 +128,7 @@
       "title_en": "🚨 [Fixed] Playback buffering issues in North America",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -138,7 +138,7 @@
       "title_en": "🚨 [FIXED] YouTube TV & YouTube App Loading Issues (Reports primarily from Texas, US)",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -148,7 +148,7 @@
       "title_en": "🚨 [FIXED] YouTube & YouTube TV signup and subscription management issues",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -158,7 +158,7 @@
       "title_en": "🚨 [Fixed] Playlists such as Watch Later partially displaying videos",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -168,7 +168,7 @@
       "title_en": "🚨 [FIXED] Video Details and Comments Disappearing After Exiting Full Screen",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -178,7 +178,7 @@
       "title_en": "🚨 [FIXED] 1 of 10 ranking missing on the Studio mobile app",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -188,7 +188,7 @@
       "title_en": "🚨 [FIXED] Voice search errors across multiple devices",
       "status": "fixed",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "title_observed_since": "2026-10-21T20:45:38.211391+00:00",
       "changes": []
@@ -208,7 +208,7 @@
       "title_en": "🚨 [Fixed] YouTube Loading Issues",
       "status": "fixed",
       "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
-      "last_seen_at": "2026-10-30T19:29:03.557427+00:00",
+      "last_seen_at": "2026-10-30T23:51:26.933454+00:00",
       "status_observed_since": "2026-10-28T21:42:04.204931+00:00",
       "title_observed_since": "2026-10-28T21:42:04.204931+00:00",
       "changes": [
