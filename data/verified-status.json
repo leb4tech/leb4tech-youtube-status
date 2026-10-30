@@ -1,29 +1,19 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-10-30T13:30:30.894675+00:00",
+  "checked_at_utc": "2026-10-30T22:39:28.566774+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
     {
-      "id": "470158580",
-      "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
-      "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
-      "url": "https://support.google.com/youtube/thread/470158580?hl=en",
+      "id": "474998367",
+      "title_ar": "مشاكل تحميل اليوتيوب",
+      "title_en": "🚨 [Fixed] YouTube Loading Issues",
+      "url": "https://support.google.com/youtube/thread/474998367?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "467480477",
-      "title_ar": "مشكلات في تسجيل الدخول إلى YouTube على أجهزة التلفزيون ووحدات تحكم الألعاب",
-      "title_en": "🚨 [Fixed] Issues logging into YouTube on TVs and gaming consoles",
-      "url": "https://support.google.com/youtube/thread/467480477?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+      "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
+      "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
     },
     {
       "id": "473433364",
@@ -34,16 +24,6 @@
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "474998367",
-      "title_ar": "مشاكل تحميل اليوتيوب",
-      "title_en": "🚨 [Fixed] YouTube Loading Issues",
-      "url": "https://support.google.com/youtube/thread/474998367?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
-      "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
     },
     {
       "id": "463279672",
@@ -60,6 +40,26 @@
       "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
       "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
       "url": "https://support.google.com/youtube/thread/468791912?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "470158580",
+      "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
+      "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
+      "url": "https://support.google.com/youtube/thread/470158580?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "467480477",
+      "title_ar": "مشكلات في تسجيل الدخول إلى YouTube على أجهزة التلفزيون ووحدات تحكم الألعاب",
+      "title_en": "🚨 [Fixed] Issues logging into YouTube on TVs and gaming consoles",
+      "url": "https://support.google.com/youtube/thread/467480477?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
