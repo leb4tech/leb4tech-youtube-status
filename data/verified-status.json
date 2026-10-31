@@ -1,20 +1,10 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-10-31T06:15:10.704366+00:00",
+  "checked_at_utc": "2026-10-31T13:01:43.435064+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
-    {
-      "id": "474998367",
-      "title_ar": "مشاكل تحميل اليوتيوب",
-      "title_en": "🚨 [Fixed] YouTube Loading Issues",
-      "url": "https://support.google.com/youtube/thread/474998367?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
-      "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
-    },
     {
       "id": "451946491",
       "title_ar": "وضع الصورة داخل الصورة لا يعمل (خاص بنظام iOS)",
@@ -24,6 +14,26 @@
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "468791912",
+      "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
+      "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
+      "url": "https://support.google.com/youtube/thread/468791912?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "474998367",
+      "title_ar": "مشاكل تحميل اليوتيوب",
+      "title_en": "🚨 [Fixed] YouTube Loading Issues",
+      "url": "https://support.google.com/youtube/thread/474998367?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
+      "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
     },
     {
       "id": "468026869",
@@ -60,16 +70,6 @@
       "title_ar": "مشكلات تتعلق بتحليلات YouTube",
       "title_en": "🚨 [FIXED] Issues with YouTube analytics",
       "url": "https://support.google.com/youtube/thread/473433364?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "468791912",
-      "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
-      "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
-      "url": "https://support.google.com/youtube/thread/468791912?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
