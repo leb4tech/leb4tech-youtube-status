@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-11-01T18:05:45.754929+00:00",
+  "checked_at_utc": "2026-11-01T22:23:06.580016+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
@@ -11,15 +11,25 @@
       "title_en": "🚨 \"Server Error 400\" when trying to access YouTube on Android",
       "url": "https://support.google.com/youtube/thread/475729475?hl=en",
       "status": "unverified",
-      "status_reason": "known_issue_without_current_ongoing_confirmation",
+      "status_reason": "title_not_located_uniquely",
       "first_seen_at": "2026-11-01T07:39:44.202865+00:00",
       "status_observed_since": "2026-11-01T07:39:44.202865+00:00"
     },
     {
-      "id": "471253790",
-      "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
-      "title_en": "🚨 [Fixed] Playback buffering issues in North America",
-      "url": "https://support.google.com/youtube/thread/471253790?hl=en",
+      "id": "473433364",
+      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
+      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
+      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "451946491",
+      "title_ar": "وضع الصورة داخل الصورة لا يعمل (خاص بنظام iOS)",
+      "title_en": "🚨 [Fixed] Picture-in-Picture Mode not working (Mainly iOS)",
+      "url": "https://support.google.com/youtube/thread/451946491?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
@@ -34,6 +44,26 @@
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
       "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
+    },
+    {
+      "id": "471253790",
+      "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
+      "title_en": "🚨 [Fixed] Playback buffering issues in North America",
+      "url": "https://support.google.com/youtube/thread/471253790?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "462538290",
+      "title_ar": "قوائم التشغيل مثل \"المشاهدة لاحقًا\" تعرض مقاطع الفيديو جزئيًا",
+      "title_en": "🚨 [Fixed] Playlists such as Watch Later partially displaying videos",
+      "url": "https://support.google.com/youtube/thread/462538290?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
       "id": "451265696",
@@ -66,16 +96,6 @@
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
-      "id": "451946491",
-      "title_ar": "وضع الصورة داخل الصورة لا يعمل (خاص بنظام iOS)",
-      "title_en": "🚨 [Fixed] Picture-in-Picture Mode not working (Mainly iOS)",
-      "url": "https://support.google.com/youtube/thread/451946491?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
       "id": "468026869",
       "title_ar": "أخطاء تحميل التحليلات في YouTube Studio",
       "title_en": "🚨 [FIXED] Analytics loading errors in YouTube Studio",
@@ -90,16 +110,6 @@
       "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
       "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
       "url": "https://support.google.com/youtube/thread/470158580?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "473433364",
-      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
-      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
-      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
@@ -180,16 +190,6 @@
       "title_ar": "مشكلات الاشتراك وإدارة الاشتراكات في YouTube وYouTube TV",
       "title_en": "🚨 [FIXED] YouTube & YouTube TV signup and subscription management issues",
       "url": "https://support.google.com/youtube/thread/468016641?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "462538290",
-      "title_ar": "قوائم التشغيل مثل \"المشاهدة لاحقًا\" تعرض مقاطع الفيديو جزئيًا",
-      "title_en": "🚨 [Fixed] Playlists such as Watch Later partially displaying videos",
-      "url": "https://support.google.com/youtube/thread/462538290?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
