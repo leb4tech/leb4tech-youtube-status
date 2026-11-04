@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-11-03T19:47:57.159815+00:00",
+  "checked_at_utc": "2026-11-04T06:58:13.910791+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
@@ -14,6 +14,16 @@
       "status_reason": "known_issue_without_current_ongoing_confirmation",
       "first_seen_at": "2026-11-01T07:39:44.202865+00:00",
       "status_observed_since": "2026-11-03T06:54:15.927409+00:00"
+    },
+    {
+      "id": "473433364",
+      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
+      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
+      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
       "id": "468791912",
@@ -40,16 +50,6 @@
       "title_ar": "مشكلات تتعلق بالتسميات التوضيحية للبث المباشر على YouTube",
       "title_en": "🚨[Fixed] Issues with YouTube Livestream Captions",
       "url": "https://support.google.com/youtube/thread/463279672?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "473433364",
-      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
-      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
-      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
@@ -130,8 +130,8 @@
       "title_ar": "مشكلات تحميل تطبيق YouTube TV وYouTube (تقارير في المقام الأول من تكساس، الولايات المتحدة)",
       "title_en": "🚨 [FIXED] YouTube TV & YouTube App Loading Issues (Reports primarily from Texas, US)",
       "url": "https://support.google.com/youtube/thread/465617845?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
+      "status": "unverified",
+      "status_reason": "unexpected_http",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
