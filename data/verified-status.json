@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-11-04T20:01:12.629217+00:00",
+  "checked_at_utc": "2026-11-05T07:21:55.755549+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
@@ -16,20 +16,30 @@
       "status_observed_since": "2026-11-03T06:54:15.927409+00:00"
     },
     {
-      "id": "470158580",
-      "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
-      "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
-      "url": "https://support.google.com/youtube/thread/470158580?hl=en",
+      "id": "451946491",
+      "title_ar": "وضع الصورة داخل الصورة لا يعمل (خاص بنظام iOS)",
+      "title_en": "🚨 [Fixed] Picture-in-Picture Mode not working (Mainly iOS)",
+      "url": "https://support.google.com/youtube/thread/451946491?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
-      "id": "451946491",
-      "title_ar": "وضع الصورة داخل الصورة لا يعمل (خاص بنظام iOS)",
-      "title_en": "🚨 [Fixed] Picture-in-Picture Mode not working (Mainly iOS)",
-      "url": "https://support.google.com/youtube/thread/451946491?hl=en",
+      "id": "451265696",
+      "title_ar": "مشكلات استخدام تطبيق YouTube للجوال",
+      "title_en": "🚨 [FIXED] Issues using YouTube Mobile App",
+      "url": "https://support.google.com/youtube/thread/451265696?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "470158580",
+      "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
+      "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
+      "url": "https://support.google.com/youtube/thread/470158580?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
@@ -100,16 +110,6 @@
       "title_ar": "قوائم التشغيل مثل \"المشاهدة لاحقًا\" تعرض مقاطع الفيديو جزئيًا",
       "title_en": "🚨 [Fixed] Playlists such as Watch Later partially displaying videos",
       "url": "https://support.google.com/youtube/thread/462538290?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "451265696",
-      "title_ar": "مشكلات استخدام تطبيق YouTube للجوال",
-      "title_en": "🚨 [FIXED] Issues using YouTube Mobile App",
-      "url": "https://support.google.com/youtube/thread/451265696?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
