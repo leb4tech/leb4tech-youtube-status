@@ -1,10 +1,30 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-11-05T07:21:55.755549+00:00",
+  "checked_at_utc": "2026-11-05T20:16:12.090008+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "474998367",
+      "title_ar": "مشاكل تحميل اليوتيوب",
+      "title_en": "🚨 [Fixed] YouTube Loading Issues",
+      "url": "https://support.google.com/youtube/thread/474998367?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
+      "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
+    },
+    {
+      "id": "468791912",
+      "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
+      "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
+      "url": "https://support.google.com/youtube/thread/468791912?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
     {
       "id": "475729475",
       "title_ar": "🚨 \"خطأ في الخادم 400\" عند محاولة الوصول إلى YouTube على نظام Android",
@@ -14,6 +34,26 @@
       "status_reason": "known_issue_without_current_ongoing_confirmation",
       "first_seen_at": "2026-11-01T07:39:44.202865+00:00",
       "status_observed_since": "2026-11-03T06:54:15.927409+00:00"
+    },
+    {
+      "id": "473433364",
+      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
+      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
+      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "471253790",
+      "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
+      "title_en": "🚨 [Fixed] Playback buffering issues in North America",
+      "url": "https://support.google.com/youtube/thread/471253790?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
       "id": "451946491",
@@ -46,36 +86,6 @@
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
-      "id": "474998367",
-      "title_ar": "مشاكل تحميل اليوتيوب",
-      "title_en": "🚨 [Fixed] YouTube Loading Issues",
-      "url": "https://support.google.com/youtube/thread/474998367?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
-      "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
-    },
-    {
-      "id": "473433364",
-      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
-      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
-      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "468791912",
-      "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
-      "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
-      "url": "https://support.google.com/youtube/thread/468791912?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
       "id": "468026869",
       "title_ar": "أخطاء تحميل التحليلات في YouTube Studio",
       "title_en": "🚨 [FIXED] Analytics loading errors in YouTube Studio",
@@ -90,16 +100,6 @@
       "title_ar": "مشكلات تتعلق بالتسميات التوضيحية للبث المباشر على YouTube",
       "title_en": "🚨[Fixed] Issues with YouTube Livestream Captions",
       "url": "https://support.google.com/youtube/thread/463279672?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "471253790",
-      "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
-      "title_en": "🚨 [Fixed] Playback buffering issues in North America",
-      "url": "https://support.google.com/youtube/thread/471253790?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
