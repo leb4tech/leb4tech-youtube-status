@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-11-06T07:22:11.381384+00:00",
+  "checked_at_utc": "2026-11-06T19:41:56.575359+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
@@ -16,16 +16,6 @@
       "status_observed_since": "2026-11-03T06:54:15.927409+00:00"
     },
     {
-      "id": "474998367",
-      "title_ar": "مشاكل تحميل اليوتيوب",
-      "title_en": "🚨 [Fixed] YouTube Loading Issues",
-      "url": "https://support.google.com/youtube/thread/474998367?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
-      "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
-    },
-    {
       "id": "468791912",
       "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
       "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
@@ -36,12 +26,32 @@
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
+      "id": "451946491",
+      "title_ar": "وضع الصورة داخل الصورة لا يعمل (خاص بنظام iOS)",
+      "title_en": "🚨 [Fixed] Picture-in-Picture Mode not working (Mainly iOS)",
+      "url": "https://support.google.com/youtube/thread/451946491?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "474998367",
+      "title_ar": "مشاكل تحميل اليوتيوب",
+      "title_en": "🚨 [Fixed] YouTube Loading Issues",
+      "url": "https://support.google.com/youtube/thread/474998367?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
+      "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
+    },
+    {
       "id": "473433364",
       "title_ar": "مشكلات تتعلق بتحليلات YouTube",
       "title_en": "🚨 [FIXED] Issues with YouTube analytics",
       "url": "https://support.google.com/youtube/thread/473433364?hl=en",
-      "status": "unverified",
-      "status_reason": "unexpected_http",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -50,16 +60,6 @@
       "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
       "title_en": "🚨 [Fixed] Playback buffering issues in North America",
       "url": "https://support.google.com/youtube/thread/471253790?hl=en",
-      "status": "unverified",
-      "status_reason": "reply_boundary_missing",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "451946491",
-      "title_ar": "وضع الصورة داخل الصورة لا يعمل (خاص بنظام iOS)",
-      "title_en": "🚨 [Fixed] Picture-in-Picture Mode not working (Mainly iOS)",
-      "url": "https://support.google.com/youtube/thread/451946491?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
@@ -80,8 +80,8 @@
       "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
       "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
       "url": "https://support.google.com/youtube/thread/470158580?hl=en",
-      "status": "unverified",
-      "status_reason": "unexpected_http",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
