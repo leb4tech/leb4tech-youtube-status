@@ -1,10 +1,20 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-11-05T20:16:12.090008+00:00",
+  "checked_at_utc": "2026-11-06T07:22:11.381384+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "475729475",
+      "title_ar": "🚨 \"خطأ في الخادم 400\" عند محاولة الوصول إلى YouTube على نظام Android",
+      "title_en": "🚨 \"Server Error 400\" when trying to access YouTube on Android",
+      "url": "https://support.google.com/youtube/thread/475729475?hl=en",
+      "status": "unverified",
+      "status_reason": "known_issue_without_current_ongoing_confirmation",
+      "first_seen_at": "2026-11-01T07:39:44.202865+00:00",
+      "status_observed_since": "2026-11-03T06:54:15.927409+00:00"
+    },
     {
       "id": "474998367",
       "title_ar": "مشاكل تحميل اليوتيوب",
@@ -26,22 +36,12 @@
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
-      "id": "475729475",
-      "title_ar": "🚨 \"خطأ في الخادم 400\" عند محاولة الوصول إلى YouTube على نظام Android",
-      "title_en": "🚨 \"Server Error 400\" when trying to access YouTube on Android",
-      "url": "https://support.google.com/youtube/thread/475729475?hl=en",
-      "status": "unverified",
-      "status_reason": "known_issue_without_current_ongoing_confirmation",
-      "first_seen_at": "2026-11-01T07:39:44.202865+00:00",
-      "status_observed_since": "2026-11-03T06:54:15.927409+00:00"
-    },
-    {
       "id": "473433364",
       "title_ar": "مشكلات تتعلق بتحليلات YouTube",
       "title_en": "🚨 [FIXED] Issues with YouTube analytics",
       "url": "https://support.google.com/youtube/thread/473433364?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
+      "status": "unverified",
+      "status_reason": "unexpected_http",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -50,8 +50,8 @@
       "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
       "title_en": "🚨 [Fixed] Playback buffering issues in North America",
       "url": "https://support.google.com/youtube/thread/471253790?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
+      "status": "unverified",
+      "status_reason": "reply_boundary_missing",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
@@ -80,8 +80,8 @@
       "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
       "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
       "url": "https://support.google.com/youtube/thread/470158580?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
+      "status": "unverified",
+      "status_reason": "unexpected_http",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
