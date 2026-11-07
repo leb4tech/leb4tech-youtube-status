@@ -1,10 +1,20 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-11-07T13:31:23.751742+00:00",
+  "checked_at_utc": "2026-11-07T22:16:35.631544+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "470158580",
+      "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
+      "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
+      "url": "https://support.google.com/youtube/thread/470158580?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
     {
       "id": "475729475",
       "title_ar": "🚨 \"خطأ في الخادم 400\" عند محاولة الوصول إلى YouTube على نظام Android",
@@ -16,10 +26,30 @@
       "status_observed_since": "2026-11-03T06:54:15.927409+00:00"
     },
     {
+      "id": "473433364",
+      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
+      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
+      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
       "id": "468791912",
       "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
       "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
       "url": "https://support.google.com/youtube/thread/468791912?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "458858307",
+      "title_ar": "تأخير الإيرادات في \"استوديو YouTube\" (ابتداءً من 8 أغسطس)",
+      "title_en": "🚨 [FIXED] Revenue delay in YouTube Studio (Starting Aug 8)",
+      "url": "https://support.google.com/youtube/thread/458858307?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
@@ -46,16 +76,6 @@
       "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
     },
     {
-      "id": "473433364",
-      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
-      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
-      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
       "id": "471253790",
       "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
       "title_en": "🚨 [Fixed] Playback buffering issues in North America",
@@ -70,16 +90,6 @@
       "title_ar": "مشكلات استخدام تطبيق YouTube للجوال",
       "title_en": "🚨 [FIXED] Issues using YouTube Mobile App",
       "url": "https://support.google.com/youtube/thread/451265696?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "470158580",
-      "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
-      "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
-      "url": "https://support.google.com/youtube/thread/470158580?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
@@ -172,16 +182,6 @@
       "url": "https://support.google.com/youtube/thread/420372066?hl=en",
       "status": "unverified",
       "status_reason": "known_issue_without_current_ongoing_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "458858307",
-      "title_ar": "تأخير الإيرادات في \"استوديو YouTube\" (ابتداءً من 8 أغسطس)",
-      "title_en": "🚨 [FIXED] Revenue delay in YouTube Studio (Starting Aug 8)",
-      "url": "https://support.google.com/youtube/thread/458858307?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
