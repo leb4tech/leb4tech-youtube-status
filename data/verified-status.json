@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-11-10T07:44:06.192941+00:00",
+  "checked_at_utc": "2026-11-10T20:00:32.798929+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
@@ -16,10 +16,10 @@
       "status_observed_since": "2026-11-03T06:54:15.927409+00:00"
     },
     {
-      "id": "473433364",
-      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
-      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
-      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
+      "id": "467480477",
+      "title_ar": "مشكلات في تسجيل الدخول إلى YouTube على أجهزة التلفزيون ووحدات تحكم الألعاب",
+      "title_en": "🚨 [Fixed] Issues logging into YouTube on TVs and gaming consoles",
+      "url": "https://support.google.com/youtube/thread/467480477?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
@@ -36,20 +36,20 @@
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
-      "id": "463279672",
-      "title_ar": "مشكلات تتعلق بالتسميات التوضيحية للبث المباشر على YouTube",
-      "title_en": "🚨[Fixed] Issues with YouTube Livestream Captions",
-      "url": "https://support.google.com/youtube/thread/463279672?hl=en",
+      "id": "473433364",
+      "title_ar": "مشكلات تتعلق بتحليلات YouTube",
+      "title_en": "🚨 [FIXED] Issues with YouTube analytics",
+      "url": "https://support.google.com/youtube/thread/473433364?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
-      "id": "467480477",
-      "title_ar": "مشكلات في تسجيل الدخول إلى YouTube على أجهزة التلفزيون ووحدات تحكم الألعاب",
-      "title_en": "🚨 [Fixed] Issues logging into YouTube on TVs and gaming consoles",
-      "url": "https://support.google.com/youtube/thread/467480477?hl=en",
+      "id": "463279672",
+      "title_ar": "مشكلات تتعلق بالتسميات التوضيحية للبث المباشر على YouTube",
+      "title_en": "🚨[Fixed] Issues with YouTube Livestream Captions",
+      "url": "https://support.google.com/youtube/thread/463279672?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
