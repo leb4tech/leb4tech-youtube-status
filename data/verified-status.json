@@ -1,19 +1,29 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-11-11T19:51:57.536906+00:00",
+  "checked_at_utc": "2026-11-12T07:42:05.367977+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
     {
       "id": "475729475",
-      "title_ar": "🚨 \"خطأ في الخادم 400\" عند محاولة الوصول إلى YouTube على نظام Android",
-      "title_en": "🚨 \"Server Error 400\" when trying to access YouTube on Android",
+      "title_ar": null,
+      "title_en": "🚨 [FIXED] \"Server Error 400\" when trying to access YouTube on Android",
       "url": "https://support.google.com/youtube/thread/475729475?hl=en",
       "status": "unverified",
-      "status_reason": "title_not_located_uniquely",
+      "status_reason": "known_issue_without_current_ongoing_confirmation",
       "first_seen_at": "2026-11-01T07:39:44.202865+00:00",
-      "status_observed_since": "2026-11-03T06:54:15.927409+00:00"
+      "status_observed_since": "2026-11-11T22:44:16.872241+00:00"
+    },
+    {
+      "id": "420372066",
+      "title_ar": "🚨 رسالة منبثقة تم إرسالها بالخطأ",
+      "title_en": "🚨 Pop up Message Sent out in Error",
+      "url": "https://support.google.com/youtube/thread/420372066?hl=en",
+      "status": "unverified",
+      "status_reason": "known_issue_without_current_ongoing_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
       "id": "473433364",
@@ -84,16 +94,6 @@
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
       "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
-    },
-    {
-      "id": "420372066",
-      "title_ar": "🚨 رسالة منبثقة تم إرسالها بالخطأ",
-      "title_en": "🚨 Pop up Message Sent out in Error",
-      "url": "https://support.google.com/youtube/thread/420372066?hl=en",
-      "status": "unverified",
-      "status_reason": "known_issue_without_current_ongoing_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
       "id": "459660973",
