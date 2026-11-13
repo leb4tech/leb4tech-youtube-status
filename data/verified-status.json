@@ -1,10 +1,40 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-11-12T20:25:16.344243+00:00",
+  "checked_at_utc": "2026-11-13T07:15:03.975589+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "470158580",
+      "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
+      "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
+      "url": "https://support.google.com/youtube/thread/470158580?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "468791912",
+      "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
+      "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
+      "url": "https://support.google.com/youtube/thread/468791912?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "475729475",
+      "title_ar": "\"خطأ في الخادم 400\" عند محاولة الوصول إلى YouTube على نظام Android",
+      "title_en": "🚨 [FIXED] \"Server Error 400\" when trying to access YouTube on Android",
+      "url": "https://support.google.com/youtube/thread/475729475?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-11-01T07:39:44.202865+00:00",
+      "status_observed_since": "2026-11-11T22:44:16.872241+00:00"
+    },
     {
       "id": "420372066",
       "title_ar": "🚨 رسالة منبثقة تم إرسالها بالخطأ",
@@ -14,16 +44,6 @@
       "status_reason": "known_issue_without_current_ongoing_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "475729475",
-      "title_ar": "\"خطأ في الخادم 400\" عند محاولة الوصول إلى YouTube على نظام Android",
-      "title_en": "🚨 [FIXED] \"Server Error 400\" when trying to access YouTube on Android",
-      "url": "https://support.google.com/youtube/thread/475729475?hl=en",
-      "status": "unverified",
-      "status_reason": "known_issue_without_current_ongoing_confirmation",
-      "first_seen_at": "2026-11-01T07:39:44.202865+00:00",
-      "status_observed_since": "2026-11-11T22:44:16.872241+00:00"
     },
     {
       "id": "473433364",
@@ -46,30 +66,10 @@
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
-      "id": "468791912",
-      "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
-      "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
-      "url": "https://support.google.com/youtube/thread/468791912?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
       "id": "463279672",
       "title_ar": "مشكلات تتعلق بالتسميات التوضيحية للبث المباشر على YouTube",
       "title_en": "🚨[Fixed] Issues with YouTube Livestream Captions",
       "url": "https://support.google.com/youtube/thread/463279672?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "451946491",
-      "title_ar": "وضع الصورة داخل الصورة لا يعمل (خاص بنظام iOS)",
-      "title_en": "🚨 [Fixed] Picture-in-Picture Mode not working (Mainly iOS)",
-      "url": "https://support.google.com/youtube/thread/451946491?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
@@ -116,36 +116,6 @@
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
-      "id": "470158580",
-      "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
-      "title_en": "🚨[FIXED] Missing Video Thumbnails & Blank Spaces on YouTube Mobile Feeds",
-      "url": "https://support.google.com/youtube/thread/470158580?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "458858307",
-      "title_ar": "تأخير الإيرادات في \"استوديو YouTube\" (ابتداءً من 8 أغسطس)",
-      "title_en": "🚨 [FIXED] Revenue delay in YouTube Studio (Starting Aug 8)",
-      "url": "https://support.google.com/youtube/thread/458858307?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "451265696",
-      "title_ar": "مشكلات استخدام تطبيق YouTube للجوال",
-      "title_en": "🚨 [FIXED] Issues using YouTube Mobile App",
-      "url": "https://support.google.com/youtube/thread/451265696?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
       "id": "468026869",
       "title_ar": "أخطاء تحميل التحليلات في YouTube Studio",
       "title_en": "🚨 [FIXED] Analytics loading errors in YouTube Studio",
@@ -160,16 +130,6 @@
       "title_ar": "قوائم التشغيل مثل \"المشاهدة لاحقًا\" تعرض مقاطع الفيديو جزئيًا",
       "title_en": "🚨 [Fixed] Playlists such as Watch Later partially displaying videos",
       "url": "https://support.google.com/youtube/thread/462538290?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "451076558",
-      "title_ar": "يواجه منشئو المحتوى مشاكل في نقل قناتهم على YouTube إلى حساب علامة تجارية",
-      "title_en": "🚨[Fixed] Creators having issues moving their YouTube channel to a Brand Account",
-      "url": "https://support.google.com/youtube/thread/451076558?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
@@ -204,6 +164,46 @@
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "462933624",
+      "title_ar": "أخطاء البحث الصوتي عبر أجهزة متعددة",
+      "title_en": "🚨 [FIXED] Voice search errors across multiple devices",
+      "url": "https://support.google.com/youtube/thread/462933624?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "441226786",
+      "title_ar": "رسالة خطأ عند البحث عن \"كريستيانو رونالدو\" على اليوتيوب",
+      "title_en": "🚨[FIXED] Error message when searching ‘Cristiano Ronaldo’ on YouTube",
+      "url": "https://support.google.com/youtube/thread/441226786?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "404341539",
+      "title_ar": "[تم الإصلاح] 🚨 شريط البحث لا يعمل & عناصر واجهة المستخدم مفقودة في تطبيق YouTube",
+      "title_en": "[تم الإصلاح] 🚨 شريط البحث لا يعمل & عناصر واجهة المستخدم مفقودة في تطبيق YouTube",
+      "url": "https://support.google.com/youtube/thread/404341539?hl=en",
+      "status": "unverified",
+      "status_reason": "staff_badge_not_adjacent",
+      "first_seen_at": "2026-11-12T20:51:37.952943+00:00",
+      "status_observed_since": "2026-11-12T20:51:37.952943+00:00"
+    },
+    {
+      "id": "338946979",
+      "title_ar": "استكشاف الأخطاء وإصلاحها في مشكلة Google Cast على أجهزة تلفزيون VIZIO",
+      "title_en": "🚨 [FIXED] Troubleshoot an issue with Google Cast on VIZIO TVs",
+      "url": "https://support.google.com/youtube/thread/338946979?hl=en",
+      "status": "unverified",
+      "status_reason": "known_issue_without_current_ongoing_confirmation",
+      "first_seen_at": "2026-11-12T20:51:37.952943+00:00",
+      "status_observed_since": "2026-11-12T20:51:37.952943+00:00"
     }
   ]
 }
