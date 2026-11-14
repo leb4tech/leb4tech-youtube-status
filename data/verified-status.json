@@ -1,10 +1,40 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-11-13T20:00:35.373013+00:00",
+  "checked_at_utc": "2026-11-14T06:59:42.808146+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "420372066",
+      "title_ar": "🚨 رسالة منبثقة تم إرسالها بالخطأ",
+      "title_en": "🚨 Pop up Message Sent out in Error",
+      "url": "https://support.google.com/youtube/thread/420372066?hl=en",
+      "status": "unverified",
+      "status_reason": "known_issue_without_current_ongoing_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "465617845",
+      "title_ar": "مشكلات تحميل تطبيق YouTube TV وYouTube (تقارير في المقام الأول من تكساس، الولايات المتحدة)",
+      "title_en": "🚨 [FIXED] YouTube TV & YouTube App Loading Issues (Reports primarily from Texas, US)",
+      "url": "https://support.google.com/youtube/thread/465617845?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
+    {
+      "id": "474998367",
+      "title_ar": "مشاكل تحميل اليوتيوب",
+      "title_en": "🚨 [Fixed] YouTube Loading Issues",
+      "url": "https://support.google.com/youtube/thread/474998367?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
+      "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
+    },
     {
       "id": "470158580",
       "title_ar": "الصور المصغرة للفيديو والمساحات الفارغة مفقودة في خلاصات YouTube للجوال",
@@ -36,16 +66,6 @@
       "status_observed_since": "2026-11-11T22:44:16.872241+00:00"
     },
     {
-      "id": "420372066",
-      "title_ar": "🚨 رسالة منبثقة تم إرسالها بالخطأ",
-      "title_en": "🚨 Pop up Message Sent out in Error",
-      "url": "https://support.google.com/youtube/thread/420372066?hl=en",
-      "status": "unverified",
-      "status_reason": "known_issue_without_current_ongoing_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
       "id": "473433364",
       "title_ar": "مشكلات تتعلق بتحليلات YouTube",
       "title_en": "🚨 [FIXED] Issues with YouTube analytics",
@@ -74,26 +94,6 @@
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
       "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "465617845",
-      "title_ar": "مشكلات تحميل تطبيق YouTube TV وYouTube (تقارير في المقام الأول من تكساس، الولايات المتحدة)",
-      "title_en": "🚨 [FIXED] YouTube TV & YouTube App Loading Issues (Reports primarily from Texas, US)",
-      "url": "https://support.google.com/youtube/thread/465617845?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "474998367",
-      "title_ar": "مشاكل تحميل اليوتيوب",
-      "title_en": "🚨 [Fixed] YouTube Loading Issues",
-      "url": "https://support.google.com/youtube/thread/474998367?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-28T16:41:35.790193+00:00",
-      "status_observed_since": "2026-10-28T21:42:04.204931+00:00"
     },
     {
       "id": "459660973",
