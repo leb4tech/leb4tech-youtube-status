@@ -1,10 +1,20 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-11-20T07:43:39.646426+00:00",
+  "checked_at_utc": "2026-11-20T20:43:17.937401+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
+    {
+      "id": "468791912",
+      "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
+      "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
+      "url": "https://support.google.com/youtube/thread/468791912?hl=en",
+      "status": "fixed",
+      "status_reason": "verified_original_post_fixed_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
+    },
     {
       "id": "420372066",
       "title_ar": "🚨 رسالة منبثقة تم إرسالها بالخطأ",
@@ -30,16 +40,6 @@
       "title_ar": "مشكلات التخزين المؤقت للتشغيل في أمريكا الشمالية",
       "title_en": "🚨 [Fixed] Playback buffering issues in North America",
       "url": "https://support.google.com/youtube/thread/471253790?hl=en",
-      "status": "fixed",
-      "status_reason": "verified_original_post_fixed_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
-    {
-      "id": "468791912",
-      "title_ar": "تناقض في عدد المشتركين في \"استوديو YouTube\".",
-      "title_en": "🚨 [FIXED] Subscriber count discrepancy on YouTube Studio",
-      "url": "https://support.google.com/youtube/thread/468791912?hl=en",
       "status": "fixed",
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
