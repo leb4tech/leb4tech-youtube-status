@@ -1,20 +1,10 @@
 {
   "version": 1,
-  "checked_at_utc": "2026-11-27T21:38:13.834287+00:00",
+  "checked_at_utc": "2026-11-28T08:24:28.460452+00:00",
   "scope": "Reviewed recent forum posts, not a complete live outage inventory",
   "official_post_dates_available": false,
   "active_status_enabled": false,
   "items": [
-    {
-      "id": "420372066",
-      "title_ar": "🚨 رسالة منبثقة تم إرسالها بالخطأ",
-      "title_en": "🚨 Pop up Message Sent out in Error",
-      "url": "https://support.google.com/youtube/thread/420372066?hl=en",
-      "status": "unverified",
-      "status_reason": "known_issue_without_current_ongoing_confirmation",
-      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
-      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
-    },
     {
       "id": "475729475",
       "title_ar": "\"خطأ في الخادم 400\" عند محاولة الوصول إلى YouTube على نظام Android",
@@ -24,6 +14,16 @@
       "status_reason": "verified_original_post_fixed_confirmation",
       "first_seen_at": "2026-11-01T07:39:44.202865+00:00",
       "status_observed_since": "2026-11-11T22:44:16.872241+00:00"
+    },
+    {
+      "id": "420372066",
+      "title_ar": "🚨 رسالة منبثقة تم إرسالها بالخطأ",
+      "title_en": "🚨 Pop up Message Sent out in Error",
+      "url": "https://support.google.com/youtube/thread/420372066?hl=en",
+      "status": "unverified",
+      "status_reason": "known_issue_without_current_ongoing_confirmation",
+      "first_seen_at": "2026-10-21T20:45:38.211391+00:00",
+      "status_observed_since": "2026-10-21T20:45:38.211391+00:00"
     },
     {
       "id": "473433364",
